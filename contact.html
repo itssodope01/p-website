@@ -33,7 +33,8 @@
     <div class="contact-container">
      <!-- Add an id attribute to the form for easier JavaScript manipulation -->
      <form data-netlify="true" id="myForm" method="POST" name="new-contact">
-      <input name="form-name" type="hidden" value="new-contact"/>
+      
+      <input name="form-name" type="hidden" value="New lead from %{formName} (%{submissionId})"/>
       <input id="name" name="name" placeholder="Your Name" required="" type="text"/>
       <input id="email" name="email" placeholder="Your Email" required="" type="email"/>
       <textarea id="message" name="message" placeholder="Your Message" required="" rows="4"></textarea>
