@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Contact
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header style="text-align: center; padding: 14px; background-color: #333; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
+   <span style="color: #d7d7d7; font-weight: bold; float: left; margin-left: 20px;">
+    PRITAM CHAKRABORTY
+   </span>
+   <div style="text-align: right; margin-right: 20px;">
+    <a href="index.html" style="padding: 6px 25px; background-color: #4b4b4b; color: #dedede; border-radius: 5px; text-decoration: none; margin: 0 10px;">
+     HOME
+    </a>
+    <a href="resume.html" style="padding: 6px 25px; background-color: #4b4b4b; color: #dedede; border-radius: 5px; text-decoration: none; margin: 0 10px;">
+     RESUME
+    </a>
+   </div>
+  </header>
+  <header>
+   <h1>
+    <span style="color :#404040;">
+     CONTACT FORM
+    </span>
+   </h1>
+  </header>
+  <main>
+   <section class="section-background" id="contact-form">
+    <div class="contact-container">
+     <!-- Add an id attribute to the form for easier JavaScript manipulation -->
+     <form data-netlify="true" id="myForm" method="POST" name="new-contact">
+      <input name="form-name" type="hidden" value="new-contact"/>
+      <input id="name" name="name" placeholder="Your Name" required="" type="text"/>
+      <input id="email" name="email" placeholder="Your Email" required="" type="email"/>
+      <textarea id="message" name="message" placeholder="Your Message" required="" rows="4"></textarea>
+      <button type="submit">
+       Send Message
+      </button>
+     </form>
+     <!-- Add a div to display the success message -->
+     <div id="new-success-message">
+     </div>
+     <div class="contact-background">
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer style="text-align: center; padding: 20px; background-color: #333; font-size: 14px;">
+   <p style="color: #fff; display: inline;">
+    Back to
+    <a class="home-button" href="index.html" style="padding: 10px 20px; background-color: #4b4b4b; color: #dedede; border-radius: 5px; text-decoration: none;">
+     HOME
+    </a>
+   </p>
+   <br/>
+   <br/>
+   <p style="color: #a7a3a3;">
+    Copyright © 2023 PRITAM CHAKRABORTY All Rights Reserved.
+   </p>
+  </footer>
+  <!-- Adding EmailJS SDK -->
+  <div id="successMessage">
+  </div>
+ </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Resume - Pritam Chakraborty
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header style="text-align: center; padding: 14px; background-color: #333; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
+   <span style="color: #d7d7d7; font-weight: bold; float: left; margin-left: 20px;">
+    PRITAM CHAKRABORTY
+   </span>
+   <div style="text-align: right; margin-right: 20px;">
+    <a href="index.html" style="padding: 6px 25px; background-color: #4b4b4b; color: #dedede; border-radius: 5px; text-decoration: none; margin: 0 10px;">
+     HOME
+    </a>
+    <a href="contact.html" style="padding: 6px 25px; background-color: #4b4b4b; color: #dedede; border-radius: 5px; text-decoration: none; margin: 0 10px;">
+     CONTACT FORM
+    </a>
+   </div>
+  </header>
+  <header>
+   <h1>
+    <span style="color :#404040;">
+    RESUME
+    </span>
+   </h1>
+  </header>
+
+  <main id="resume-main">
+   
+<div id="simplifiedDownloadSection" style="position: relative; display: inline-block;">
+  <button class="simplified-download-button" id="simplifiedDownloadBtn" style="cursor: pointer;">
+    DOWNLOAD RESUME
+  </button>
+  <div class="simplified-dropdown" id="simplifiedDownloadDropdown" style="position: absolute; display: none;">
+    <a class="simplified-dropdown-item" download="" href="files/Resume 101.pdf">
+      Download as PDF
+    </a>
+    <a class="simplified-dropdown-item" download="" href="files/Resume 101_page_1.png">
+      Download as Image
+    </a>
+  </div>
+</div>
+
+   <section id="skills">
+    <h2>
+     <span style="color: #007BFF;">
+      🛠️
+     </span>
+     Skills
+    </h2>
+    <p>
+     <strong>
+      Programming Languages:
+     </strong>
+     Python, Java, C++
+    </p>
+    <p>
+     <strong>
+      Web Technologies:
+     </strong>
+     HTML, CSS, JavaScript
+    </p>
+    <p>
+     <strong>
+      Frameworks:
+     </strong>
+     React, React Native
+    </p>
+   </section>
+   <section id="projects">
+    <h2>
+     <span style="color: #007BFF;">
+      📚
+     </span>
+     Projects
+    </h2>
+    <article>
+     <h3>
+      Personal Finance Tracker App
+     </h3>
+     <p>
+      Developed a mobile app to track personal expenses and savings goals using React Native.
+     </p>
+     <p>
+      Implemented user authentication, interactive charts, and data persistence with Firebase.
+     </p>
+     <p>
+      Improved JavaScript skills and gained experience in mobile app development.
+     </p>
+    </article>
+    <article>
+     <h3>
+      Mail Sorter, Term Assignment
+     </h3>
+     <p>
+      MailSorter is a Data Structure program written in Java that takes in Addresses and sorts them in ascending order of ZipCodes using RadixSort.
+     </p>
+    </article>
+    <article>
+     <h3>
+      Bug Fixing and Project Testing in C++
+     </h3>
+     <p>
+      Engaged in bug fixing and testing for various projects, gaining practical experience in C++.
+     </p>
+    </article>
+   </section>
+   <section id="coursework">
+    <h2>
+     <span style="color: #007BFF;">
+      📘
+     </span>
+     Collegiate Coursework
+    </h2>
+    <div class="course-grid">
+     <div class="course">
+      DATA STRUCTURES AND ALGORITHMS
+     </div>
+     <div class="course">
+      COMPUTER ARCHITECTURE AND ORGANIZATION
+     </div>
+     <div class="course">
+      OBJECT ORIENTED PROGRAMMING
+     </div>
+     <div class="course">
+      LOGIC IN COMPUTER SCIENCE
+     </div>
+     <div class="course">
+      INTRODUCTION TO UNIX SYSTEMS
+     </div>
+     <div class="course">
+      DISCRETE MATHEMATICS
+     </div>
+     <div class="course">
+      DIFFERENTIAL AND INTEGRAL CALCULUS
+     </div>
+     <div class="course">
+      ELECTRIC CIRCUITS 1
+     </div>
+     <div class="course">
+      STATISTICS
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer style="text-align: center; padding: 20px; background-color: #333; font-size: 14px;">
+   <p style="color: #fff; display: inline;">
+    Back to
+    <a class="home-button" href="index.html" style="padding: 10px 20px; background-color: #4b4b4b; color: #dedede; border-radius: 5px; text-decoration: none;">
+     HOME
+    </a>
+   </p>
+   <br/>
+   <br/>
+   <p style="color: #a7a3a3;">
+    Copyright © 2023 PRITAM CHAKRABORTY All Rights Reserved.
+   </p>
+  </footer>
+  <script>
+   document.addEventListener('DOMContentLoaded', (event) => {
+  document.getElementById("downloadBtn").addEventListener("click", function(){
+    const dropdown = document.getElementById("downloadDropdown");
+    dropdown.style.display = dropdown.style.display === "none" || dropdown.style.display === "" ? "block" : "none";
+  });
+});
+  </script>
+ 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const simplifiedDownloadSection = document.getElementById("simplifiedDownloadSection");
+    const simplifiedDownloadBtn = document.getElementById("simplifiedDownloadBtn");
+    const simplifiedDownloadDropdown = document.getElementById("simplifiedDownloadDropdown");
+    const dropdownItems = simplifiedDownloadDropdown.querySelectorAll(".simplified-dropdown-item");
+    
+    function showDropdown() {
+      simplifiedDownloadDropdown.style.transition = "max-height 1s ease-in-out, opacity 1s ease-in-out";  // Slower drop-down speed
+      simplifiedDownloadDropdown.style.maxHeight = "200px";
+      simplifiedDownloadDropdown.style.opacity = "1";
+      dropdownItems.forEach((item, index) => {
+        setTimeout(() => {
+          item.style.opacity = "1";
+          item.style.transform = "translateY(0)";
+        }, index * 200);
+      });
+    }
+    
+    function hideDropdown() {
+      simplifiedDownloadDropdown.style.transition = "max-height 0.5s ease-in-out, opacity 0.5s ease-in-out";  // Faster moving up speed
+      simplifiedDownloadDropdown.style.maxHeight = "0";
+      simplifiedDownloadDropdown.style.opacity = "0";
+      dropdownItems.forEach((item, index) => {
+        setTimeout(() => {
+          item.style.opacity = "0";
+          item.style.transform = "translateY(-10px)";
+        }, index * 100);
+      });
+      setTimeout(() => {
+        simplifiedDownloadDropdown.style.display = "none";
+      }, 500);  // Match the faster animation time for moving up
+    }
+
+    simplifiedDownloadSection.addEventListener("click", function(event) {
+      if (window.innerWidth <= 768) {  // Check if the device is mobile
+        if (simplifiedDownloadDropdown.style.display === "none" || !simplifiedDownloadDropdown.style.display) {
+          simplifiedDownloadDropdown.style.display = "block";
+          showDropdown();
+        } else {
+          hideDropdown();
+        }
+      }
+    });
+
+    // For Desktop: Show dropdown on mouseenter and hide on mouseleave
+    if (window.innerWidth > 768) {
+      simplifiedDownloadSection.addEventListener("mouseenter", function(event) {
+        simplifiedDownloadDropdown.style.display = "block";
+        showDropdown();
+      });
+
+      simplifiedDownloadSection.addEventListener("mouseleave", function(event) {
+        hideDropdown();
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

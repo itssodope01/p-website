@@ -1,0 +1,475 @@
+
+/* General reset and styling */
+html, body, div, h1, h2, h3, ul, p, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Navigation styling */
+nav ul {
+    background: #555;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav ul li {
+    display: inline;
+    padding: 12px;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styling */
+section {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+section h2, section h3 {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/* Projects and Coursework */
+article {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    background: #f9f9f9;
+}
+
+/* Footer and Contact */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+/* Styling for the Collegiate Coursework section */
+#coursework {
+    margin-top: 30px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+
+
+
+/* Emoji icon style */
+.course span {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* Form styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Background image adjustment for full coverage without scrolling */
+#background-container {
+    background-size: cover;  /* The image will cover the entire container */
+    background-repeat: no-repeat;  /* The image will not repeat */
+    background-position: center;  /* The image will be centered in the container */
+    background-attachment: fixed;  /* The background will be fixed with respect to the viewport */
+    height: 100vh;  /* Fixed height to cover the full visible area */
+    overflow: hidden;  /* Hide any overflowing content */
+}
+
+#background-container main {
+    background: rgba(255, 255, 255, 0.9);  /* White background with slight transparency */
+    border-radius: 8px;  /* Rounded corners */
+    padding: 20px;  /* Padding around the white box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Box shadow for depth */
+}
+
+/* Reset, Typography and Basic Styling */
+html, body, div, h1, h2, h3, ul, p, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;  /* Body text font */
+    font-size: 100%;
+    vertical-align: baseline;
+    line-height: 1.6;
+    color: #333;  /* Dark Grey for Main Text */
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;  /* Heading font */
+    color: #007BFF;  /* Blue for Headings */
+    margin-bottom: 20px;  /* Add bottom margin for spacing */
+}
+
+/* Header and Menu Styling */
+header {
+    background: #F1F1F1;  /* Light Grey for Header */
+    color: #333;  /* Dark Grey for Header Text */
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    background: #F1F1F1;  /* Light Grey for Menu */
+    overflow: hidden;
+    color: #333;  /* Dark Grey for Menu Items */
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav ul li {
+    display: inline;
+    padding: 12px;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);  /* White Background with slight transparency */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Other Elements */
+/* ... (This will include other elements like icons, animations, etc. which we'll add next) */
+
+/* Upper section background color change */
+#upper-section {
+    background: #F1F1F1;  /* Light Grey for Upper Section */
+}
+
+/* Add background image to the resume main section */
+#resume-main {
+    background: url('images/AdobeStock_294794307.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+}
+
+/* Make the white box slightly transparent */
+#resume-main section {
+    background-color: rgba(255, 255, 255, 0.8);  /* white with 80% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Download button styles */
+.download-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Dropdown styles */
+.dropdown {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.dropdown a {
+  display: block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Added background image to the contact form section */
+.section-background {
+    background-image: url('images/AdobeStock_449669986.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;  /* Update text color for better visibility */
+    padding: 50px;  /* Add padding to the section */
+}
+
+/* Remove underline from specific buttons */
+.no-underline-text a {
+  text-decoration: none !important;
+}
+
+/* Contact container layout */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Contact form styling */
+.contact-container form {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact background image */
+.contact-background {
+    flex: 1;
+    background-image: url('images/AdobeStock_449669986.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Download button styling */
+.download-button {
+  background-color: #4b4b4b;
+  color: #dedede;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #3a3a3a;
+}
+
+/* Dropdown styling */
+.dropdown {
+  display: none;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: absolute;
+  min-width: 160px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  color: #4b4b4b;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #ddd;
+}
+
+/* Updated Download button and dropdown styling with animation */
+
+/* Dropdown styling with smooth transition */
+.dropdown {
+  display: block;  /* Changed from none to block for animation */
+  max-height: 0;  /* Start from 0 height */
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;  /* Add transition effect */
+  opacity: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: absolute;
+  min-width: 160px;
+  border-radius: 4px;
+}
+
+.dropdown.show {  /* New class to toggle for showing dropdown */
+  max-height: 500px;  /* Maximum height when expanded */
+  opacity: 1;
+}
+
+/* Desktop behavior: Show dropdown on hover */
+@media screen and (min-width: 769px) {
+  .download-button:hover + .dropdown, 
+  .download-button + .dropdown:hover {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+/* Wrapper for download button and dropdown */
+#downloadSection {
+  display: inline-block;  /* Only take as much width as needed */
+  position: relative;  /* Set positioning context for dropdown */
+}
+
+/* Simplified download button */
+.simplified-download-button {
+  background-color: #4b4b4b;
+  color: #dedede;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Simplified dropdown */
+.simplified-dropdown {
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Simplified dropdown items */
+.simplified-dropdown-item {
+  color: #4b4b4b;
+  padding: 12px 16px;
+  text-align: left;
+  display: block;
+}
+
+/* Simplified dropdown items with cascading reveal effect */
+.simplified-dropdown-item {
+  color: #4b4b4b;
+  padding: 12px 16px;
+  text-align: left;
+  display: block;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.simplified-dropdown.show .simplified-dropdown-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add delay for cascading effect */
+.simplified-dropdown.show .simplified-dropdown-item:nth-child(1) {
+  transition: opacity 0.3s 0.2s ease-in-out, transform 0.3s 0.2s ease-in-out;
+}
+
+.simplified-dropdown.show .simplified-dropdown-item:nth-child(2) {
+  transition: opacity 0.3s 0.4s ease-in-out, transform 0.3s 0.4s ease-in-out;
+}
+
+/* Darker hover effect for dropdown items */
+.simplified-dropdown-item:hover {
+  background-color: #ccc;  /* Darker shade */
+  color: #333;
+}
+
+/* Edges similar to other buttons for the "Download Resume" button */
+#simplifiedDownloadBtn {
+  border-radius: 4px;  /* Matching border-radius with other buttons */
+}
+
+/* Extended button hover animations */
+.button:hover,
+.home-button:hover,
+header a:hover,
+footer a:hover {
+    background-color: #555 !important;
+    color: #fff !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Excluding 'Send Message' and 'Download Resume' buttons */
+.simplified-download-button:hover {
+    /* No hover effect */
+}
+
+/* Parallax Effect Styles */
+section > .parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: transform 0.5s;
+}
+
+section > .parallax-fg:hover + .parallax-bg {
+    transform: scale(1.1);
+}
+
+section > .parallax-fg {
+    position: relative;
+    z-index: 1;
+}
+
+/* Style for button and social media container */
+.button-container, .social-media-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Make only the buttons clickable, not the space around them */
+.button-container a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Style for social media icons */
+.social-media-container a img {
+  width: 30px;
+  margin: 0 10px;
+}
